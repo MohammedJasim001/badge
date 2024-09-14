@@ -33,38 +33,38 @@ const Not = () => {
   };
 
   return (
-    <div className="flex items-center justify-center pt-20 flex-col">
-      <div className="border w-[500px] h-[80vh] ">
-        <h1 className="text-2xl">Note Creat</h1>
-        <div>
-          <div className="flex ">
-            <h1>Title</h1>
+    <div className="flex items-center justify-center pt-20 flex-col bg-blue-300 h-[100vh]">
+      <div className=" w-[500px] h-[60vh] bg-green-400 rounded-md">
+        <h1 className="text-2xl text-center"><u>Note Creat</u></h1>
+        <div className="mt-10 ">
+          <div className=" flex gap-5 mt-5 ml-2">
+            <h1 className="text-lg">Title: </h1>
             <input
               value={input.title}
               onChange={handleChange}
               name="title"
-              className="border w-[300px] h-10"
+              className="border w-[300px] h-10 rounded-md p-5"
               type="text"
             />
           </div>
-          <div className="flex ">
-            <h1>Description</h1>
+          <div className="flex gap-5 mt-5 ml-2">
+            <h1 className="text-lg">Description: </h1>
             <textarea
               value={input.description}
               onChange={handleChange}
-              className="border"
+              className="border rounded-md pl-5 pt-2"
               name="description"
-              rows={3}
-              cols={30}
+              rows={5}
+              cols={45}
             ></textarea>
           </div>
-          <div className="flex ">
-            <h1>Color</h1>
+          <div className="flex gap-5 mt-5 ml-2">
+            <h1 className="text-lg">Color: </h1>
             <input
               value={input.color}
               onChange={handleChange}
               name="color"
-              className="border w-[300px] h-10"
+              className="border w-[300px] h-10 rounded-md p-5"
               type="text"
             />
           </div>
@@ -72,7 +72,7 @@ const Not = () => {
 
         
       </div>
-      <button onClick={handleAdd} className="bg-blue-600 rounded-md p-2">Submit</button>
+      <button onClick={handleAdd} className="bg-blue-600 rounded-md p-2 w-40">Submit</button>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Main = () => {
     <div className="min-h-screen  p-6">
       <div className="mb-6">
         <Link to={'/create'}>
-          <button className="bg-blue-500 text-white p-2 rounded-lg shadow-lg  ">
+          <button className="bg-blue-500 text-white p-2 rounded-lg shadow-lg w-40 ">
             Create
           </button>
         </Link>
